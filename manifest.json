@@ -1,0 +1,33 @@
+{
+	"author":"Efiria",
+
+	"manifest_version":2,
+
+	"name":"Extension Fresh Stream",
+	"description":"Pour ne rien louper de mes streams !",
+	"version":"1.29",
+
+	"browser_action":{
+		"default_icon":"icon_off.png",
+		"default_title":"Je fais une pause"
+	},
+
+   "background": {
+   		"persistent": true,
+      	"scripts": [ 
+      		"background.js"
+      ]
+   },
+	"permissions": [
+		"activeTab", 
+		"https://ajax.googleapis.com/",
+		"https://api.twitch.tv/kraken/*", 
+		"notifications" 
+	],
+
+	"update_url": "https://clients2.google.com/service/update2/crx",
+
+	"icons":{
+		"128" : "img/icon_128.png"
+	}
+}
